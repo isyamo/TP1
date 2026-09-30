@@ -17,7 +17,7 @@ public class tp {
             System.out.print("Choisissez une option : ");
             choix = sc.nextInt();
 
-            // 2. Le Switch doit être ICI, à l'intérieur du do-while
+            
             switch (choix) {
                 case 1:
                     System.out.print("Entrez deux entiers : ");
@@ -37,7 +37,6 @@ public class tp {
                     System.out.print("Entrez deux entiers : ");
                     int a3 = sc.nextInt();
                     int b3 = sc.nextInt();
-                    // Correction ici : on utilise bien a3 et b3 (pas a2/b2)
                     System.out.println("Résultat : " + soustraction(a3, b3)); 
                     break;
 
@@ -73,12 +72,12 @@ public class tp {
             
         } while (choix != 0); // La boucle continue tant qu'on ne tape pas 0
 
-        sc.close(); // Bonne pratique : fermer le scanner à la fin
+        sc.close(); 
     }
 
-    // ====================================================
+   
     // MÉTHODES (Placées en dehors du main, mais dans la classe)
-    // ====================================================
+    
 
     public static int addition(int a, int b) {
         return a + b;
@@ -94,7 +93,7 @@ public class tp {
     }
 
     public static double moyenne(int... valeurs) {
-        if (valeurs.length == 0) return 0; // Sécurité si le tableau est vide
+        if (valeurs.length == 0) return 0; 
         int total = 0;
         for (int v : valeurs) {
             total += v;
